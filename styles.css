@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; 
+    color: #212529; 
+}
+
+/* High Contrast Mode */
+.high-contrast {
+    background-color: #000;
+    color: red;
+}
+
+.high-contrast .btn, .high-contrast .navbar, .high-contrast .card {
+    background-color: #fff;
+    color: #000;
+}
+
+.high-contrast .card-body {
+    background-color: #fff;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #484d52;
+    color: #ffc107;
+}
+
+body.dark-mode .navbar, body.dark-mode .card {
+    background-color: #495057;
+    color: #f8f9fa;
+}
+
+body.dark-mode .btn {
+    background-color: #ffc107;
+    color: #343a40;
+}
+
+/* Button Styles */
+.btn-large {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Navigation Bar */
+.navbar {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+.navbar-brand, .nav-link {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+}
+
+/* Header Section */
+header {
+    background-image: linear-gradient(to bottom, #007bff, #0056b3);
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+header button {
+    margin: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Features Section */
+#features {
+    background-color: #fff;
+    padding: 3rem 1rem;
+}
+
+#features .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+#features .card-title {
+    color: #0056b3;
+}
+
+/* Product Scanner Section */
+#scanner {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+}
+
+#scanner button {
+    margin-bottom: 1rem;
+}
+
+#productDetails {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+    padding: 3rem 1rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+#contact .form-control {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Footer Section */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.accessibility-toggle {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header, #features, #scanner, #contact, footer {
+        padding: 2rem 1rem;
+    }
+}
