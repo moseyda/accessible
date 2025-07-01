@@ -1,17 +1,19 @@
-// Handling high contrast mode
+// Toggle High Contrast Mode (and disable dark mode if active)
 function toggleHighContrast() {
-    const highContrastClasses = ['high-contrast', 'blue-contrast', 'yellow-contrast'];
-    const currentClass = document.body.className;
-
-    // Cycle through contrast modes
-    let nextClass = highContrastClasses[(highContrastClasses.indexOf(currentClass) + 1) % highContrastClasses.length];
-    document.body.className = nextClass || '';
+    document.body.classList.toggle('high-contrast');
+    if (document.body.classList.contains('high-contrast')) {
+        document.body.classList.remove('dark-mode');
+    }
 }
 
-// Toggle dark mode
+// Toggle Dark Mode (and disable high contrast if active)
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        document.body.classList.remove('high-contrast');
+    }
 }
+
 
 // Function to provide audio feedback using Speech Synthesis
 function provideAudioInstructions(text) {
